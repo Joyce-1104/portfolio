@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joyce Mary S | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
+
     <style>
         * {
             margin: 0;
@@ -68,6 +68,7 @@
             font-size: 0.9em;
             color: #aaa;
         }
+
         a.button {
             display: inline-block;
             background: #8fcfff;
@@ -77,35 +78,43 @@
             text-decoration: none;
             margin-top: 10px;
         }
-        
+
         .resume-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: navy;
-            color: white;
-            font-family: "Times New Roman", serif;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        nav a {
-            color: #8fcfff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px;
-            transition: background-color 0.3s, color 0.3s;
-            border-radius: 5px;
-        }
-        
-        nav a:hover {
-            background-color: white;
-            color: #0b1d3a;
-        }
+    display: inline-block;
+    margin: 10px 15px 10px 0;
+    padding: 10px 20px;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Times New Roman", serif;
+}
 
+.resume-button:hover {
+    background-color: #003366; /* Darker navy */
+}
 
-        
+        .about-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 30px;
+                }
+
+                .about-text {
+                flex: 1;
+                min-width: 250px;
+                color: white;
+                font-size: 16px;
+                }
+
+                .about-image img {
+                width: 250px;  /* Adjust size as needed */
+                border-radius: 10px;
+                object-fit: cover;
+                }
+
     </style>
 </head>
 
@@ -125,12 +134,22 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>A dedicated Final-year Artificial Intelligence and Data Science student with a strong foundation in software
-            development and problem-solving skills.Adept at programming, research, and design, with a strong foundation
-            in Python, Java, and web technologies. I enjoy working on interdisciplinary projects that combine software,
-            hardware, and creative design. Seeking opportunities to apply my skills in challenging environments and
-            contribute to impactful solutions.</p>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    A dedicated Final-year Artificial Intelligence and Data Science student with a strong foundation
+                    in software development and problem-solving skills. Adept at programming, research, and design,
+                    with a strong foundation in Python, Java, and web technologies. I enjoy working on interdisciplinary
+                    projects that combine software, hardware, and creative design. Seeking opportunities to apply my
+                    skills in challenging environments and contribute to impactful solutions.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="image.jpg" alt="Joyce Mary" />
+            </div>
+        </div>
     </section>
+
 
     <section id="education">
         <h2>Education</h2>
@@ -229,22 +248,29 @@
         <li>Business Intelligence and Analytics - NPTEL</li>
 
     </section>
-    <section id = "resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download class="resume-button">Download Resume</a>
+    <section id="resume">
+    <h2>Resume</h2>
+    
+    <!-- View Resume Button -->
+    <a href="resume.pdf" target="_blank" class="resume-button">View Resume</a>
+    
+    <!-- Download Resume Button -->
+    <a href="resume.pdf" download class="resume-button">Download Resume</a>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: joycemarys1104@email.com</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/joyce-mary-71a623288"
-                target="_blank">www.linkedin.com/in/joyce-mary-71a623288
-            </a></p>
-             <p>GitHub: <a href="https://github.com/joycemarys" target="_blank">github.com/joycemarys</a></p> 
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: joycemarys1104@email.com</p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/joyce-mary-71a623288"
+                    target="_blank">www.linkedin.com/in/joyce-mary-71a623288
+                </a></p>
+            <p>GitHub: <a href="https://github.com/joycemarys" target="_blank">github.com/joycemarys</a></p>
+            <p>Mobile No: +91 9840328097</p>
+        </section>
 
-    <footer>
-        &copy; 2025 Joyce Mary S. All Rights Reserved.
-    </footer>
+        <footer>
+            &copy; 2025 Joyce Mary S. All Rights Reserved.
+        </footer>
 </body>
 
 </html>
